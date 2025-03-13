@@ -11,7 +11,8 @@ app.use(bodyParser.json());  // Для JSON-данных
 app.use(bodyParser.urlencoded({ extended: true })); // Для данных формы (form-urlencoded)
 // Подключение к базе данных
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: 'host.docker.internal',
+  // host: 'localhost',
   user: 'root',      // Укажите свой логин
   password: '',      // Укажите свой пароль
   database: 'goodsnewtesttask'   // Название базы данных

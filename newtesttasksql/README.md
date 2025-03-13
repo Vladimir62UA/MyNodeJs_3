@@ -75,4 +75,4 @@ docker build -t MyNodeJs_3 .
 
 Команда для запуска проекта с другого ПК
 
-docker run -d -p 3000:3000 MyNodeJs_3
+docker run -d -p 3001:3000 mynodejs_3
