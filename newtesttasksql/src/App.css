@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Justify_btn{
+  height: 50px;
+}
+li{
+  list-style: none; 
+}
+.right_border{
+  border-right: 1px solid lightgray;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Указывает, что можно кликнуть */
+}
+
+.modal-content {
+  background: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  cursor: default; /* Чтобы внутри модалки курсор был обычным */
+}
+
+.modal-content-delete {
+  background: green;
+  padding: 20px;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  position: relative;
+  cursor: default; /* Чтобы внутри модалки курсор был обычным */
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+}
+
+.product-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  border-right: 1px solid #ccc;
+}
+
+.product-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product-list li.selected {
+  background-color: #f0f0f0;
+}
+
+.product-details {
+  flex: 2;
+}
+.btn-success:hover{
+  color: green !important;
+  background-color: white;
+}
+.text1_black{
+  color: black;
+  border: none;
+}
+.text1_green{
+  color: green;
+  border: 2px solid green;
+  border-bottom-color: green;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.text2_black{
+  color: black;
+  border: none;
+}
+.text2_green{
+  color: green;
+  border: 2px solid green;
+  border-bottom-color: green;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+header{
+  height: 80px;
+}
+
+.btn_close{
+  margin-top: -25px;
+  margin-right: -25px;
+  
+}
+
+.Circle_1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: -50px;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: white;
+}
+.ImageRayhan{
+  width: 100px;
+}
+.button_add {
+  width: 30px;
+  height: 30px;
+  background-color: #f5da08ad;
+  
+}
+.button_add:hover {
+  background-color: #09e757ad;
+}
