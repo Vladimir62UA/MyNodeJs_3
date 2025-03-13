@@ -20,10 +20,10 @@
     - Modal_delete.js;
     - ModalAddOrder.js;
     - index_task.js,
-    а также файл стилизации страниц проекта App.css.
+    а также файл стилизации страниц проекта App.css и Dockerfile.
     Эти файлы находятся в папке MyNodeJs_3\newtesttasksql\src
     Кроме этого создан файл index_task.js, обеспечивающий работу с базой данных на Back-end.
-    Этот файл находится в корне папки MyNodeJs_3.
+    Этот файл находится в корне папки MyNodeJs_3. Там же находится  Dockerfile для Backend.
     В этой же папке находится файл базы данных goodsnewtesttask.sql
 4. В компоненте Navigation Menu находятся роут-ссылки на Orders_1 и Products.
 5. В компоненте TopMenu в правом верхнем углу в реальном времени выводятся дата и время.
