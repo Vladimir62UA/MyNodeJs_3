@@ -319,21 +319,21 @@ const ModalAddOrder = ({ isOpen, closeModal, dateStart, monthStart, yearStart, p
                 <div></div>
                 <div className='d-flex flex-row ps-4'>
                     <h5 className='text-success'>Выберите валюту прихода:</h5>
-                    <div class="form-check ms-3">
+                    <div className="form-check ms-3">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="RadioUAN" onClick={() => openRadioState('UAN')} defaultChecked />
-                        <label className="form-check-label" for="RadioUAN">
+                        <label className="form-check-label" htmlFor="RadioUAN">
                             UAN
                         </label>
                     </div>
-                    <div class="form-check ms-3">
+                    <div className="form-check ms-3">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="RadioUSD" onClick={() => openRadioState('USD')}/>
-                        <label className="form-check-label" for="RadioUSD">
+                        <label className="form-check-label" htmlFor="RadioUSD">
                             USD
                         </label>
                     </div>
-                    <div class="form-check ms-3">
+                    <div className="form-check ms-3">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="RadioEUR" onClick={() => openRadioState('EUR')}/>
-                        <label className="form-check-label" for="RadioEUR">
+                        <label className="form-check-label" htmlFor="RadioEUR">
                             EUR
                         </label>
                     </div>

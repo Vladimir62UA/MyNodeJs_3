@@ -15,9 +15,10 @@ export function Orders_1(dateStart, monthStart, yearStart, props) {
   const [selectedOrderId, setSelectedOrderId] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null); // Добавлено
   const [ordersSQL, setOrdersSQL] = useState([]);  // Храним список приходов
+  const [stateWord, setStateWord] = useState('продукт'); // Храним состояние слова "продукт"
 
   const orderObj = useSelector((state) => state.orderObject)
-  console.log("Orders_1 ===================  orderObj = ", orderObj)
+  // console.log("Orders_1 ===================  orderObj = ", orderObj)
   
   const openModal = (orderId) => {
       setSelectedOrderId(orderId);
@@ -117,7 +118,19 @@ export function Orders_1(dateStart, monthStart, yearStart, props) {
       // Загружаем данные при загрузке компонента
       useEffect(() => {
           fetchData();
+
       }, []);
+      // var word_1 = orderObj.length
+      // if (word_1 === 1){
+      //   console.log("Order_1.js   ==============  1111111111111111111 = ")
+      //   setStateWord('продукт');
+      // }
+      // if (orderObj.length === 2 || orderObj.length === 3 || orderObj.length === 4){
+      //   setStateWord('продукта') 
+      // }
+      // if (orderObj.length === 0 || orderObj.length === 5 || orderObj.length === 6 || orderObj.length === 7 || orderObj.length === 8 || orderObj.length === 9){
+      //   setStateWord('продуктов') 
+      // }
 
   return (
      <div className="container p-0">
@@ -138,7 +151,13 @@ export function Orders_1(dateStart, monthStart, yearStart, props) {
                 
                 <div className='d-flex flex-column justify-content-center m-0 col-2'>
                     <h5 className='ps-1 pt-2'>{order.productsQuantity}</h5>
-                    <h6 className='ps-1 pb-2 text-dark'>Продукта</h6>
+                    <h6 className='ps-1 pb-2 text-dark'>
+                      {order.productsQuantity % 10 == 1 && order.productsQuantity % 100 !== 11
+                        ? 'продукт'
+                        : (order.productsQuantity % 10 >= 2 && order.productsQuantity % 10 <= 4 && (order.productsQuantity % 100 < 10 || order.productsQuantity % 100 >= 20))
+                        ? 'продукта'
+                        : 'продуктов'}
+                    </h6>
                 </div >
               {/* <p>Дата создания прихода:</p> */}
               <div className='d-flex flex-column align-items-center justify-content-center m-0 col-4'>
