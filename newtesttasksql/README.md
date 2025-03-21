@@ -72,6 +72,6 @@
 node.js работает на порту 3001.
 19. Для того, чтобы база данных подгружалась к проекту запускаем XAMPP и в строках Apache и MySQL нажимаем кнопки Start.
 20. Запускаем сервер. Для этого в корне папки MyNodeJs_3 вводим команду     docker run -p 3001:3001 mynodejs_3
-21. Для разворачивания (сборки) React в папки newtesttasksql вводим команду     docker build -t newtesttasksql .
+21. Для разворачивания (сборки) React в папке newtesttasksql вводим команду     docker build -t newtesttasksql .
 22. Запускаем React с помощью команды     docker run -p 3002:3000 newtesttasksql
 Вместо порта 3002 можно использовать любой другой свободный порт.
