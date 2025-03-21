@@ -70,6 +70,7 @@
 Далее в корне этой папки вводим команду для клонирования проекта
 
 git clone https://github.com/Vladimir62UA/MyNodeJs_3.git
+
 19. Для разворачивания (сборки) сервера в корне папки MyNodeJs_3 вводим команду 
 docker build -t mynodejs_3 .
 node.js работает на порту 3001.
