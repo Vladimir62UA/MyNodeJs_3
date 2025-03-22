@@ -84,5 +84,5 @@ docker build -t newtesttasksql .
 22. Запускаем React с помощью команды
 docker run -p 3002:3000 newtesttasksql
 Вместо порта 3002 можно использовать любой другой свободный порт.
-23. 
+23. Hello World
 >>>>>>> b1d4f9f (6 commit)
