@@ -17,4 +17,8 @@ COPY . .
 EXPOSE 3000
 
 # 7. Команда для запуска приложения
+<<<<<<< HEAD
 CMD ["npm", "start"]
+=======
+CMD ["npm", "start"]
+>>>>>>> 5bc6cf8 (5 commit)
